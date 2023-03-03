@@ -1,108 +1,105 @@
-name: John Doe
+name: Dzmitry Litmanovich
 support_dark_mode: true
-fork: true
+fork: false
 
 # Sidebar
 contact:
-  email: info@johndoe.com
-  github: johndoe
-  linkedin: johndoe
-  phone: 
-  gitlab: 
-  twitter: 
+  email: dmitry.litmanovich@pm.me
+  github: dmitrylitmanovich
+  linkedin: dlitmanovich
+  phone: +995591948485
+
+courses:
+  - time: Mar, 2017 - Aug, 2017
+    organization: BelHard
+    title: PHP Developer
 
 languages:
-  - idiom: English
-  - idiom: Russian
-  - idiom: French
-
-education:
-  - degree: MSc in Informatics
-    time: 2014-2016
-    university: Ionian University
-
-  - degree: BSc in Computer Science
-    time: 2010-2014
-    university: Ionian University
+  - idiom: English - B1
 
 skills:
   - category: Backend
     skill: 
-      - Go
-      - Rust
+      - Ruby, Ruby on Rails
+      - Python, FastAPI, Django
   - category: Frontend
     skill:
-      - React
-      - Typescript
+      - JavaScript, React
   - category: DevOps
     skill:
       - Docker
-      - Kubernetes 
+      - Terraform
+  - category: Databases
+    skill:
+      - PostgreSQL
+      - MySQL
+      - MongoDB
+      - Redis
 
 # Profile
 profile: |
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-  fugiat nulla pariatur.
+  I am a professional and self-motivated Ruby on Rails developer with over
+  5 years of experience in different business domains, such as Education,
+  E-commerce, Marketing, and Healthcare. As a professional, I always looking
+  for possibilities to upgrade my skills and knowledge.
 
 # Experience
 experience:
-  - role: Software Engineer
-    time: 2020-Present
-    company: Google
+  - role: Ruby Developer
+    time: Sep, 2022 - Dec, 2022
+    company: JetRockets
     details: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-      fugiat nulla pariatur.
+      <u>Project</u></br>
+      <b>Safari Portal</b></br>
+      Travel management platform and custom itinerary builder</br>
+      <u>Responsibilities</u></br>
+      • implementation of new features on both front and back-end sides in Agile workflow;</br>
+      • integration of side libraries and APIs services;</br>
+      • test coverage;</br>
+      • participate in weekly calls with clients;</br>
+      • support, optimization, and refactoring for code.</br>
     technologies_used: | 
-      Go, Angular, Typescript, C++
+      Ruby on Rails, React.js, Redux, Postgresql
   
-  - role: Researcher
-    time: 2016-2020
-    company: Microsoft
+  - role: Full Stack Developer
+    time: Oct, 2019 - Aug, 2022
+    company: Itexus
     details: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-      fugiat nulla pariatur.
+      <u>Project</u></br>
+      <b>TireAgent</b></br>
+      A web-based e-commerce application that allows users to buy tires & wheels and a dashboard for managing orders by admins.</br>
+      <u>Responsibilities</u></br>
+      • implementation of new features on both front and back-end sides;</br>
+      • integration of side libraries and APIs services;</br>
+      • test coverage;</br>
+      • support, optimization, and refactoring for legacy code;</br>
+      • site performance optimization;</br>
+      • participation in task evaluation.</br></br>
+      <u>Project</u></br>
+      <b>BattlePRO</b></br>
+      A web-based application - an online platform for companies and people who need to train and improve their practical negotiation skills.</br>
+      <u>Responsibilities</u></br>
+      • implementation of new features on both front and back-end sides;</br>
+      • integration of side libraries and APIs services;</br>
+      • test coverage;</br>
+      • support, optimization, and refactoring for legacy code;</br>
+      • mentoring.
+
     technologies_used: | 
-      Python, Tensorflow, Keras, Matlab
+      Ruby on Rails, React.js, Postgresql, Spree, Solidus, Effector, Redis, Websocket, Opentok
 
-publications:
-  - title: Random title of paper. An interesting one.
-    link: "#"
-    authors: John E. Doe
-    conference: Some conference, 2016
-
-  - title: Second title of paper. An interesting one too.
-    link: "#"
-    authors: John E. Doe
-    conference: Some conference again, 2018
-
-projects:
-  - title: Cool Project 
-    link: #
+  - role: Full Stack Developer
+    time: Sep, 2022 - Dec, 2022
+    company: Velmie
     details: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua.
-
-  - title: Cool Project 
-    link: #
-    details: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua.
-
-# Volunteering
-volunteering:
-  - time: 2020-Present
-    role: PR Manager
-    company: Some random organization
-    details: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+      <u>Project</u></br>
+      <b>Pendex</b></br>
+      A web-based and mobile application for monitoring users’ health and improving training programs.</br></br>
+      <u>Project</u></br>
+      <b>Maestrolink</b></br>
+      An IoT application for managing and monitoring fountains in entertainment centers.</br></br>
+      <u>Project</u></br>
+      <b>Nxmoov</b></br>
+      A web-based application for searching for a job and hiring.</br></br>
+    technologies_used: | 
+      Ruby on Rails, PHP, Slim, PostgreSQL, Kotlin, Redis

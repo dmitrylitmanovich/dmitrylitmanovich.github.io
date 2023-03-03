@@ -1,5 +1,12 @@
 source "https://rubygems.org"
 
-gem "jekyll", "3.5.2"
+gem "jekyll"
 
-gem "jekyll-minifier", "0.1.10"
+gem "jekyll-minifier"
+
+gem "github-pages"
+
+group :jekyll_plugins do
+  gem "jekyll-mentions", "1.6.0"
+  gem "webrick"
+end

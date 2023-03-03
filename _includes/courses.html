@@ -1,0 +1,13 @@
+{% assign courses = site.data.data.courses %}
+{% if courses %}
+<section class="education">
+    <div class="title">Courses</div>
+    {% for cs in courses %}
+        <div class="education-item">
+            <div class="degree">{{cs.title}}</div>
+            <div class="university">{{cs.organization}}</div> 
+            <div class="time">{{cs.time}}</div>
+        </div>
+    {% endfor %}
+</section>
+{% endif %}
