@@ -24,11 +24,13 @@ skills:
       - Python, FastAPI, Django
   - category: Frontend
     skill:
-      - JavaScript, React
+      - JavaScript, React, Redux, Effector, Angular
   - category: DevOps
     skill:
       - Docker
       - Terraform
+      - Ansible
+      - GitLab/GitHub CI/CD
   - category: Databases
     skill:
       - PostgreSQL
@@ -63,7 +65,7 @@ experience:
       Ruby on Rails, React.js, Redux, Postgresql
   
   - role: Full Stack Developer
-    time: Oct, 2019 - Aug, 2022
+    time: Jun 2018 - Aug 2022
     company: Itexus
     details: |
       <u>Project</u></br>
@@ -90,7 +92,7 @@ experience:
       Ruby on Rails, React.js, Postgresql, Spree, Solidus, Effector, Redis, Websocket, Opentok
 
   - role: Full Stack Developer
-    time: Sep, 2022 - Dec, 2022
+    time: Oct 2017 - Jun 2018
     company: Velmie
     details: |
       <u>Project</u></br>
