@@ -4,7 +4,7 @@ fork: false
 
 # Sidebar
 contact:
-  email: dmitry.litmanovich@pm.me
+  email: dzmitrij.l@tuta.io
   github: dmitrylitmanovich
   linkedin: dlitmanovich
   phone: +995591948485
@@ -38,11 +38,12 @@ skills:
 
 # Profile
 profile: |
-  I am a professional and self-motivated Ruby on Rails developer with over
-  5 years of experience in different business domains, such as Education,
-  E-commerce, Marketing, and Healthcare. As a professional, I always looking
-  for possibilities to upgrade my skills and knowledge.
-
+  Highly skilled Software Engineer with 5.5+ years of web application development experience. Experienced in
+  Ruby, Ruby on Rails, JavaScript, and front-end frameworks (React, Angular). Also skilled in Python, with 2
+  years of hands-on experience building APIs and backend services using Django and FastAPI. Proficient with
+  PostgreSQL and comfortable working across the full stack. Known for effective multitasking, adaptability, and
+  attention to detail. Demonstrates a proactive approach to staying updated with industry trends and best
+  practices.
 # Experience
 experience:
   - role: Ruby Developer
