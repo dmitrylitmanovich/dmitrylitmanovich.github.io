@@ -6,14 +6,11 @@
         .role {
             @include sub-header;
         }
-        .company {
+        .time {
             @include body-text;
-            font-weight: bold;
-            .time {
-                float: right;
-                color: var(--fg-color-title-sm);
-                font-weight: 100;
-            }
+            float: right;
+            color: var(--fg-color-title-sm);
+            font-weight: 100;
         }
         .details {
             @include body-text;
