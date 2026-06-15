@@ -1,23 +1,160 @@
----
-layout: default
----
-<div class="container">
-  {% include header.html %}
-  <div class="container-block">
-    <div class="sidebar">
-      {% include contact.html %}
-      {% include languages.html %}
-      {% include education.html %}
-      {% include skills.html %}
-      {% include fork.html %}
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dzmitry Litmanovich - Backend Engineer</title>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+            --accent-color: #2c3e50;
+            --secondary-text: #666;
+            --link-color: #0056b3;
+            --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
 
-    <div class="main">
-      {% include career-profile.html %}
-      {% include experience.html %}
-      {% include publications.html %}
-      {% include projects.html %}
-      {% include volunteering.html %}
+        body {
+            font-family: var(--font-main);
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        header {
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { margin: 0; color: var(--accent-color); font-size: 2.2rem; }
+        h2 { margin-top: 30px; color: var(--accent-color); font-size: 1.4rem; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        h3 { margin: 15px 0 5px; font-size: 1.1rem; color: #444; }
+        
+        .role { font-size: 1.2rem; color: var(--secondary-text); margin: 5px 0 15px; font-weight: 500; }
+        .contact-info { font-size: 0.9rem; color: var(--secondary-text); display: flex; flex-wrap: wrap; gap: 15px; }
+        .contact-info a { color: var(--link-color); text-decoration: none; }
+        .contact-info a:hover { text-decoration: underline; }
+
+        ul { margin: 0; padding-left: 20px; }
+        li { margin-bottom: 8px; }
+
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .company { font-weight: bold; }
+        .dates { font-size: 0.9rem; color: var(--secondary-text); font-style: italic; }
+
+        @media (max-width: 600px) {
+            .container { padding: 20px; }
+            .job-header { flex-direction: column; }
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dzmitry Litmanovich</h1>
+            <div class="role">Backend Engineer • Elixir/Phoenix • Ruby/Rails • Go</div>
+            <div class="contact-info">
+                <span>📍 Tbilisi, Georgia / Remote</span>
+                <a href="mailto:dzmitrij.l@tuta.io">✉️ dzmitrij.l@tuta.io</a>
+                <a href="tel:+995591948485">📱 +995 591 948 485</a>
+                <a href="https://linkedin.com/in/dlitmanovich">🔗 LinkedIn</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p>Backend engineer with 6+ years of production experience across e-commerce, adtech, and SaaS, now focused on Elixir and the BEAM ecosystem. My path was deliberate: Ruby on Rails as a foundation, a production Ruby-to-Go migration, and Elixir as the current direction. OTP supervision trees, fault-tolerant concurrency, and Phoenix's architecture are principled answers to the distributed systems problems I have been solving the hard way for years.</p>
+            <p>I bring production depth in system design, API architecture, and database performance that shortens ramp-up on an Elixir team, plus a strong habit of reading and verifying unfamiliar code carefully before shipping and a track record of catching system-level tradeoffs before they become incidents.</p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Elixir/BEAM:</strong> Mix, GenServer, OTP supervision trees, Task, pattern matching, immutability, ExUnit, let-it-crash/process-isolation design.</li>
+                <li><strong>Phoenix:</strong> Router, controllers, LiveView, Ecto (schemas, changesets, associations, query building, migrations).</li>
+                <li><strong>Ruby/Rails:</strong> 6+ years production — REST API design, background job architecture, TDD, large-scale refactoring.</li>
+                <li><strong>Go:</strong> Production microservices, goroutines, channels, service rewrites, inter-service communication.</li>
+                <li><strong>Databases:</strong> PostgreSQL (EXPLAIN ANALYZE, query optimization, index design, N+1 elimination), MySQL, MongoDB, DynamoDB.</li>
+                <li><strong>Infrastructure:</strong> Docker, Kubernetes, Terraform, Kafka, AWS (EC2, S3, DynamoDB), GitHub Actions, GitLab CI/CD.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+            
+            <div class="job-entry">
+                <div class="job-header">
+                    <span class="company">Go Developer | Freelance — B2B SaaS (NDA)</span>
+                    <span class="dates">Oct 2023 – Jun 2024 • Contract • Remote</span>
+                </div>
+                <ul>
+                    <li>Rewrote 4 core production modules from Ruby to Go.</li>
+                    <li>Led system design for inter-service communication—evaluated messaging patterns, failure isolation, and retry logic before implementation, preventing two identified architectural issues from reaching production.</li>
+                    <li>Critically reviewed the existing codebase for correctness issues in concurrency primitives and API boundary contracts; produced written specs for refactored modules before any code was written.</li>
+                    <li>Refactored the internal shared library, improving reuse across services and reducing onboarding time.</li>
+                    <li><strong>Relevance to Elixir:</strong> The distributed-coordination and failure-handling problems solved here with goroutines are exactly the ones OTP supervision trees were designed to make elegant.</li>
+                </ul>
+            </div>
+
+            <div class="job-entry">
+                <div class="job-header">
+                    <span class="company">Full Stack Developer | Safari Portal — Travel-tech</span>
+                    <span class="dates">Aug 2022 – Dec 2022 • Contract • Remote</span>
+                </div>
+                <ul>
+                    <li>Delivered full-stack features for a travel booking platform (Ruby on Rails, React, PostgreSQL).</li>
+                    <li>Integrated third-party booking and payment APIs with robust failure/retry handling; wrote integration contracts upfront to catch edge cases before implementation.</li>
+                    <li>Self-managed delivery with async written updates; no micromanagement required.</li>
+                </ul>
+            </div>
+
+            <div class="job-entry">
+                <div class="job-header">
+                    <span class="company">Backend Developer | Tire Agent — US E-commerce</span>
+                    <span class="dates">Jun 2018 – Aug 2022 • Full-time • Remote</span>
+                </div>
+                <ul>
+                    <li>Improved overall platform performance by 46%—systematic work with EXPLAIN ANALYZE, N+1 elimination, and index redesign across the product catalogue and order management.</li>
+                    <li>Owned the backend purchase funnel (Ruby on Rails + PostgreSQL), including third-party tire-supplier API integration with retry and failure handling designed from the specification stage.</li>
+                    <li>Mentored 2 junior developers to independent feature delivery within 3 months via structured code review and pair debugging.</li>
+                    <li>Setup the GitHub Actions CI/CD pipeline, moving the team from ad-hoc deploys to structured, verified releases.</li>
+                </ul>
+            </div>
+            
+            <!-- Previous roles omitted for brevity in this view, add them similarly -->
+        </section>
+
+        <section>
+            <h2>Elixir Projects & Self-Study</h2>
+            <ul>
+                <li><strong>InsightNest (Alpha):</strong> Structured knowledge-community platform built in Elixir/Phoenix/LiveView with Ecto, OTP supervision tree, and GenServer-based background worker. Designed schema and supervision tree before writing production code.</li>
+                <li><strong>Sign-In with Ethereum (SIWE/EIP-4361):</strong> Implemented full authentication flow in pure Elixir—no NIFs, no JavaScript SDK—working directly from the specification.</li>
+                <li><strong>Study:</strong> Programming Elixir, Elixir in Action, Designing Elixir Systems with OTP, Phoenix in Action.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <p><strong>Technical University, Minsk, Belarus</strong><br>Engineering Design and Production of Materials</p>
+        </section>
+        
+        <section>
+            <h2>What I'm Looking For</h2>
+            <p>An Elixir/Phoenix team with real production problems—distributed systems, data integrity, performance—where deep backend experience is a genuine asset. Async-friendly remote culture with clear ownership, honest code review, and room to grow into a strong Elixir engineer.</p>
+        </section>
     </div>
-  </div>
-</div>
+</body>
+</html>
